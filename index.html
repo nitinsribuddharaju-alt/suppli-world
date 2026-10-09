@@ -3,10 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Suppli World · Long-life staples and emergency food for Indian homes</title>
-<meta name="description" content="Rice, wheat and dal sealed to keep for up to 20 years, plus meals that need no gas. Long-life staples and emergency food for Indian homes.">
+<title>Suppli World · Rice, dal, wheat packed to keep 20 years</title>
+<meta name="description" content="Everyday staples and ready meals, sealed to keep for years. Long-life food for Indian homes.">
 <meta property="og:title" content="Suppli World · Rice, dal, wheat. Packed to keep 20 years.">
 <meta property="og:description" content="Long-life staples and emergency food for Indian homes.">
+<meta property="og:image" content="https://suppli.world/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://suppli.world/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1F6A3A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%279%27 width=%2720%27 height=%2721%27 fill=%27%23F3EEE2%27 stroke=%27%231F6A3A%27 stroke-width=%272.5%27/%3E%3Crect x=%274%27 y=%274%27 width=%2724%27 height=%276%27 fill=%27%231F6A3A%27/%3E%3Crect x=%2710%27 y=%2716%27 width=%2712%27 height=%276%27 fill=%27%23C42A1F%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +86,7 @@ p{margin:0}
 .band{background:var(--band);color:var(--band-ink)}
 .band h2{color:var(--band-ink)}
 .band .muted{color:var(--band-muted)}
-.why{display:grid;gap:clamp(24px,4vw,56px);padding:clamp(48px,7vw,88px) 0}
+.why{display:grid;gap:clamp(24px,4vw,56px);padding-top:clamp(48px,7vw,88px);padding-bottom:clamp(48px,7vw,88px)}
 @media(min-width:900px){.why{grid-template-columns:.9fr 1.1fr;align-items:center}}
 .why ul{list-style:none;margin:0;padding:0;border-top:2px dashed rgba(255,255,255,.35)}
 .why li{display:grid;grid-template-columns:minmax(130px,170px) 1fr;gap:16px;padding:16px 0;border-bottom:2px dashed rgba(255,255,255,.35);align-items:baseline}
@@ -270,31 +276,135 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
 .nophotos .door h3{margin-top:0}
 .nophotos .door{border-top:3px solid var(--pr);padding-top:14px}
 .nophotos .kit{padding-top:6px}
+
+/* v9 additions */
+.keep > *,.how > *,.plan > *,.join > *,.day-strip > *,.hero-grid > *{min-width:0}
+.how{display:grid;gap:22px}
+@media(min-width:820px){.how{grid-template-columns:1fr 1fr}}
+.part{background:var(--paper);border:3px solid var(--pr);display:flex;flex-direction:column}
+.part .photo{border:0;border-bottom:3px solid var(--pr)}
+.part-body{padding:20px;display:grid;gap:10px}
+.part .kicker{font-family:var(--stencil);font-size:15px;color:var(--pr);letter-spacing:.5px}
+.part h3{font-family:var(--stencil);font-weight:400;font-size:clamp(26px,3vw,32px);color:var(--hl);line-height:1.05}
+.part p{color:var(--muted);font-size:15px}
+.part ul{margin:4px 0 0;padding-left:18px;font-size:15px}
+.part li{margin:3px 0}
+.how-note{margin-top:20px;font-size:16px;max-width:60ch}
+.day-strip{margin-top:clamp(28px,4vw,44px);display:grid;gap:18px}
+@media(min-width:900px){.day-strip{grid-template-columns:.7fr 1.3fr;align-items:center}}
+.day-strip h3{font-family:var(--stencil);font-weight:400;font-size:26px;color:var(--hl)}
+.day-strip p{color:var(--muted);font-size:15px;margin-top:6px}
+.keep{display:grid;gap:clamp(24px,4vw,48px)}
+@media(min-width:900px){.keep .feat{grid-template-columns:repeat(4,1fr)} .keep .feat > div{padding-right:18px}}
+.keep .feat{margin-top:0}
+.subhead{font-family:var(--stencil);font-weight:400;font-size:clamp(24px,3vw,30px);color:var(--hl);margin:clamp(36px,5vw,56px) 0 16px}
+.form details.list{border-top:2px dashed rgba(0,0,0,.2);padding-top:12px}
+.form details.list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:600;font-size:14px;min-height:44px}
+.form details.list summary::-webkit-details-marker{display:none}
+.form details.list summary::after{content:"+";font-family:var(--stencil);font-size:24px;color:var(--hl)}
+.form details.list[open] summary::after{content:"\2212"}
+.form details.list .count{font-weight:500;color:var(--muted);margin-left:auto;font-size:13px}
+.form .ruled{margin-top:10px;border-width:2px}
+.form .ruled .pick{min-height:34px}
+
+/* v10 */
+.wrap.sec{padding-top:clamp(56px,8vw,104px);padding-bottom:clamp(56px,8vw,104px);padding-left:var(--edge);padding-right:var(--edge)}
+.facts-row{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-weight:600;font-size:15px}
+.facts-row span{display:inline-flex;align-items:center;gap:8px}
+.facts-row span::before{content:"";width:14px;height:14px;background:var(--pr) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3 3 7-7.5' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='square'/%3E%3C/svg%3E") center/11px no-repeat;flex:none}
+.why-line{margin-top:18px;font-size:15px}
+.ticks{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:6px;font-size:16px}
+.ticks li{display:flex;gap:10px;align-items:baseline}
+.ticks li::before{content:"";width:10px;height:10px;border:2px solid var(--pr);flex:none;transform:translateY(1px)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(24px,4vw,40px);border-top:3px double var(--pr);border-bottom:3px double var(--pr)}
+.stats div{padding:16px 10px;text-align:center;display:grid;gap:2px}
+.stats div+div{border-left:2px dashed rgba(0,0,0,.2)}
+.stats b{font-family:var(--stencil);font-weight:400;font-size:clamp(26px,4vw,40px);color:var(--hl);line-height:1}
+.stats span{font-size:13px;color:var(--muted)}
+.stats-cap{margin-top:10px;font-size:13px;color:var(--muted);text-align:center}
+.bars{display:grid;gap:14px;background:var(--paper);border:3px solid var(--pr);padding:clamp(16px,3vw,26px)}
+.bar-row{display:grid;grid-template-columns:minmax(118px,200px) 1fr minmax(78px,auto);gap:12px;align-items:center;font-size:15px}
+.bar-row > span:first-child{font-weight:600}
+.track{height:18px;background:var(--bg2);overflow:hidden}
+.fill{display:block;height:100%;width:0;background:var(--pr);transition:width 1s cubic-bezier(.2,.7,.2,1)}
+.bar-row.short .fill{background:var(--hl)}
+.bar-row b{font-family:var(--stencil);font-weight:400;font-size:18px;color:var(--pr);text-align:right;white-space:nowrap}
+.bar-row.short b{color:var(--hl)}
+.axis{display:grid;grid-template-columns:minmax(118px,200px) 1fr minmax(78px,auto);gap:12px;font-size:12px;color:var(--muted)}
+.axis div{display:flex;justify-content:space-between}
+@media(max-width:560px){.bar-row{grid-template-columns:96px 1fr 70px;gap:8px;font-size:14px}.bar-row b{font-size:15px}.axis{display:none}}
+.icons{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:clamp(22px,3vw,32px)}
+@media(min-width:760px){.icons{grid-template-columns:repeat(4,1fr)}}
+.icons div{display:grid;gap:8px;justify-items:start}
+.icons svg{width:40px;height:40px;color:var(--pr)}
+.icons b{font-size:16px}
+.icons span{font-size:14px;color:var(--muted);margin-top:-6px}
+.lasts-grid{display:grid;gap:clamp(22px,4vw,44px)}
+@media(min-width:960px){.lasts-grid{grid-template-columns:1.15fr .85fr;align-items:center}}
+.reassure{font-weight:600;color:var(--pr)}
+details.own{margin-top:clamp(28px,4vw,40px);border-top:3px solid var(--pr)}
+details.own > summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;font-family:var(--stencil);font-size:clamp(22px,3vw,28px);color:var(--hl)}
+details.own > summary::-webkit-details-marker{display:none}
+details.own > summary small{font-family:var(--body);font-size:14px;color:var(--muted);margin-left:auto}
+details.own > summary::after{content:"+";font-size:30px}
+details.own[open] > summary::after{content:"\2212"}
+details.own .plan{padding-top:10px}
+.founder blockquote{max-width:680px}
+.sticky-cta{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .2s,transform .2s;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.sticky-cta.on{opacity:1;transform:none;pointer-events:auto}
+@media(min-width:900px){.sticky-cta{display:none}}
+.lasts-grid > *, .how > *{min-width:0}
+
+/* v11 */
+.photo:not(.img){display:none}
+.photo.img{display:block;padding:0;border:0;background:var(--bg2);overflow:hidden}
+.photo.img img{width:100%;height:100%;object-fit:cover;display:block}
+.part .photo.img{border-bottom:3px solid var(--pr)}
+.lasts-grid .photo.img{border:3px solid var(--pr)}
+.fav{display:grid;grid-template-columns:1fr;gap:16px;align-items:center}
+@media(min-width:700px){.fav{grid-template-columns:200px 1fr auto}}
+.fav-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border:2px solid var(--hl)}
+.fav{margin-top:clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;border:3px dashed var(--hl);background:var(--paper);padding:18px 20px}
+.fav b{font-family:var(--stencil);font-weight:400;font-size:clamp(22px,2.6vw,28px);color:var(--hl);display:block;line-height:1.1}
+.fav p{color:var(--muted);font-size:15px;margin-top:4px}
+.field textarea{min-height:76px;border:2px solid rgba(0,0,0,.28);border-radius:0;background:#fff;padding:10px 14px;font:inherit;font-size:16px;color:var(--ink);resize:vertical}
+.field textarea:focus{outline:none;border-color:var(--pr);box-shadow:0 0 0 3px rgba(0,0,0,.08)}
+.kits{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.kit .meta{min-height:2.6em}
+.amount .pick{font-size:14px}
+
+/* v12 image layout (last, so it wins) */
+.fav{display:grid;grid-template-columns:1fr;gap:16px;align-items:center}
+@media(min-width:700px){.fav{grid-template-columns:200px 1fr auto}}
+.fav-img{width:100%;max-width:100%;height:auto}
 </style>
 </head>
-<body class="tA nophotos">
+<body class="tA">
+
 <header class="top">
   <div class="wrap top-in">
     <a class="logo" href="#top">SUPPLI WORLD</a>
-    <nav aria-label="Sections"><a href="#pack">Packaging</a><a href="#plan">Plan your supply</a><a href="#kits">Supplies</a><a href="#life">Shelf life</a><a href="#faq">Questions</a></nav>
+    <nav aria-label="Sections"><a href="#how">What it is</a><a href="#keep">How long it keeps</a><a href="#choose">Reserve</a><a href="#faq">Questions</a></nav>
     <a class="btn sm" href="#join"><span class="long">Join the waitlist</span><span class="short">Join</span></a>
   </div>
 </header>
 
 <main id="top">
-<section class="hero">
+<section class="hero" data-watch="hero">
   <div class="wrap hero-grid">
     <div>
       <h1 id="hero-title">Rice, dal, wheat. Packed to keep 20 years.</h1>
-      <p class="sub" id="hero-sub">Long-life staples and emergency food for Indian homes. Buy once, store it, and stop worrying about the next shortage.</p>
-      <div class="ctas"><a class="btn" href="#plan">Plan your supply</a><a class="btn line" href="#life">See what lasts</a></div></div>
+      <p class="sub" id="hero-sub">Long-life staples and emergency food for Indian homes.</p>
+      <div class="ctas"><a class="btn" href="#choose">Reserve</a><a class="btn line" href="#how">What it is</a></div>
+      <div class="facts-row"><span>Keeps for years</span><span>No preservatives</span><span>No payment</span></div>
+    </div>
     <div class="sack" aria-label="Example pack print">
       <div class="brand" id="label-type">SUPPLI WORLD · LONG-LIFE STOCK</div>
       <div class="item" id="label-name">Sona Masoori</div>
-      <div class="kg" id="label-serves">Raw rice · 2.5 kg tin · sealed</div>
-      <dl><dt>Ingredients</dt><dd id="label-ingr">Sona masoori rice</dd><dt>Preservatives</dt><dd>None</dd><dt id="label-k3">Store</dt><dd id="label-v3">Cool, dry, off the floor</dd></dl>
-      <div class="stamp">Packed Oct 2026<b>Keeps till 2046</b></div>
-      <small>Illustrative. Shelf life varies by product.</small>
+      <div class="kg" id="label-serves">Raw rice · sealed</div>
+      <dl><dt>Preservatives</dt><dd>None</dd><dt id="label-k3">Store</dt><dd id="label-v3">Cool and dry</dd></dl>
+      <div class="stamp">Packed 2026<b>Keeps till 2046</b></div>
+      <small>Illustrative.</small>
     </div>
   </div>
 </section>
@@ -304,119 +414,69 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
     <h2 id="why-title">Shortages don't send a warning.</h2>
     <div>
       <ul>
-        <li><b>Gas runs short</b><span>Cylinders get rationed and the cooking stops.</span></li>
-        <li><b>Prices jump</b><span>Fuel costs and a weak monsoon reach rice, dal and oil within weeks.</span></li>
-        <li><b>Roads close</b><span>Floods and cyclones cut off the shops for days.</span></li>
+        <li><b>Gas runs short</b><span>The cooking stops.</span></li>
+        <li><b>Prices jump</b><span>Rice, dal and oil cost more within weeks.</span></li>
+        <li><b>Harvests fail</b><span>Heatwaves and weak monsoons hit crops.</span></li>
+        <li><b>Supply breaks</b><span>Trucks stop and shop shelves run empty.</span></li>
+        <li><b>Roads close</b><span>Floods cut off the shops for days.</span></li>
       </ul>
-      <p class="muted" style="margin-top:18px;font-size:15px">Several countries now ask every household to keep food at home for emergencies. Most Indian kitchens hold a few weeks of stock, in packets that last months.</p>
+      <p class="muted why-line">Several countries now ask every household to keep food at home.</p>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="how">
   <div class="wrap">
-    <div class="sec-head"><h2>What are you stocking for?</h2></div>
-    <div class="doors" role="group" aria-label="Choose what you're stocking for">
-      <button class="door" data-seg="home" aria-pressed="false"><div class="photo"><span>Photo: kitchen shelf with our tins beside steel dabbas, monsoon outside</span></div><h3>Home readiness</h3><p>Floods, power cuts, gas shortages.</p></button>
-      <button class="door" data-seg="stockup" aria-pressed="false"><div class="photo"><span>Photo: a month's tins stacked in a storeroom</span></div><h3>Smart stock-up</h3><p>Buy at today's prices. Keeps for years.</p></button>
-      <button class="door" data-seg="trek" aria-pressed="false"><div class="photo"><span>Photo: trekker eating from a pouch at a hill campsite</span></div><h3>Treks and travel</h3><p>Real meals, far from a kitchen.</p></button>
+    <div class="sec-head"><h2>Two kinds of stock</h2><p>The food you already eat, packed to keep for years.</p></div>
+    <div class="how">
+      <article class="part">
+        <div class="photo img"><img src="images/staples.jpg" alt="A Suppli World container of Sona Masoori rice, stamped Keeps till 2046" width="1200" height="900" loading="lazy" decoding="async"></div>
+        <div class="part-body">
+          <h3>Everyday staples</h3>
+          <ul class="ticks"><li>Rice, wheat, dal and basics</li><li>Cook them as usual</li></ul>
+        </div>
+      </article>
+      <article class="part">
+        <div class="photo img"><img src="images/meals.jpg" alt="A Suppli World khichdi pouch marked Just add water, on a steel plate" width="1200" height="900" loading="lazy" decoding="async"></div>
+        <div class="part-body">
+          <h3>Ready meals, no gas needed</h3>
+          <ul class="ticks"><li>Khichdi, upma, rajma chawal</li><li>Just add water</li></ul>
+        </div>
+      </article>
+    </div>
+    <div class="fav">
+      <img class="fav-img" src="images/favourite.jpg" alt="A Suppli World pouch of Amma's podi beside homemade podi on a kitchen counter" width="1200" height="898" loading="lazy" decoding="async">
+      <div><b>Got a favourite?</b><p>A podi, a chutney, a family recipe. Tell us, and we'll look at packing it to keep.</p></div>
+      <a class="btn line" href="#join" id="fav-link">Tell us yours</a>
     </div>
   </div>
 </section>
 
 <hr class="stitch">
 
-<section class="sec" id="pack">
-  <div class="wrap pack">
-    <div>
-      <div class="sec-head"><h2>Packed to be handled, stacked and forgotten.</h2><p>Long-life food is only useful if it's easy to keep. Every tin and pouch is designed for real Indian homes: small storerooms, high lofts, hot summers.</p></div>
-      <div class="photo"><span>Photo: hands lifting a tin off a stacked shelf, lid in view</span></div>
-    </div>
-    <div class="feat"><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="27" width="12" height="13"/><rect x="23" y="27" width="12" height="13"/><rect x="16" y="12" width="12" height="13"/><path d="M6 41h32"/></svg><div><h3>Stacks flat</h3><p>Same-size tins stack four high on any shelf or loft. No sagging sacks.</p></div></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="12" y="16" width="20" height="24"/><path d="M12 22h20M17 16v-5h10v5"/></svg><div><h3>Easy to carry</h3><p>2.5 kg tins, light enough for anyone to lift. One tin is about two days of rice for a family of four.</p></div></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="11" y="18" width="22" height="22"/><path d="M8 13h28v5H8zM18 8h8"/></svg><div><h3>Closes again</h3><p>A snap-on plastic lid keeps an opened tin fresh while you use it up.</p></div></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 5l14 6v10c0 9-6 15-14 18C14 36 8 30 8 21V11z"/><path d="M15 22l5 5 9-10"/></svg><div><h3>Rat and insect proof</h3><p>Metal, so no weevils, no damp, no rats chewing through a bag.</p></div></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><ellipse cx="22" cy="14" rx="14" ry="6"/><path d="M8 14v18c0 3 6 6 14 6s14-3 14-6V14"/><path d="M16 14h12"/></svg><div><h3>Read it from above</h3><p>What’s inside and the best-before year are printed on the lid, so you can see them on a high shelf.</p></div></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 8h20v28c0 2-2 4-4 4H16c-2 0-4-2-4-4z"/><path d="M12 14h20M17 26h10" stroke-dasharray="3 3"/><path d="M28 8l4 4"/></svg><div><h3>Light, flat pouches</h3><p>No-gas meals come in flat pouches with a tear notch and a fill line. Eat straight from the pouch.</p></div></div></div>
-  </div>
-</section>
-
-<hr class="stitch">
-
-<section class="sec" id="plan">
+<section class="sec" id="keep">
   <div class="wrap">
-    <div class="sec-head"><h2>Plan your supply</h2><p>Choose your household and how long you want to be covered. We plan on 2,000 kcal per person per day.</p></div>
-    <div class="plan">
+    <div class="sec-head"><h2>How long it keeps</h2><p>Sealed, with the air taken out. Every pack is dated.</p></div>
+    <div class="lasts-grid">
       <div>
-        <div class="ctl"><span id="l-people">People in your home</span>
-          <div class="stepper" role="group" aria-labelledby="l-people"><button type="button" id="p-minus" aria-label="Fewer people">&minus;</button><output id="p-val" aria-live="polite">4</output><button type="button" id="p-plus" aria-label="More people">+</button></div></div>
-        <div class="ctl"><span id="l-dur">Cover for</span>
-          <div class="picks radio" role="group" aria-labelledby="l-dur" id="dur">
-            <button type="button" class="pick" data-d="3" aria-pressed="false">3 days</button><button type="button" class="pick" data-d="7" aria-pressed="false">1 week</button><button type="button" class="pick" data-d="30" aria-pressed="true">1 month</button><button type="button" class="pick" data-d="90" aria-pressed="false">3 months</button><button type="button" class="pick" data-d="180" aria-pressed="false">6 months</button><button type="button" class="pick" data-d="365" aria-pressed="false">1 year</button>
-          </div></div>
-        <div class="ctl"><span id="l-ng">Days with no gas at all</span>
-          <div class="picks radio" role="group" aria-labelledby="l-ng" id="nogas">
-            <button type="button" class="pick" data-n="0" aria-pressed="false">None</button><button type="button" class="pick" data-n="3" aria-pressed="true">3 days</button><button type="button" class="pick" data-n="7" aria-pressed="false">7 days</button>
-          </div><small>No-gas days use ready meals that need only water. Every other day uses staples you cook as usual.</small></div>
+        <div class="bars" id="bars"><div class="bar-row"><span>Rice, wheat, sugar, salt</span><div class="track"><i class="fill" data-w="100"></i></div><b>20+ yrs</b></div><div class="bar-row"><span>Dals and oats</span><div class="track"><i class="fill" data-w="75"></i></div><b>10–20 yrs</b></div><div class="bar-row"><span>Ready meals</span><div class="track"><i class="fill" data-w="75"></i></div><b>5–20 yrs</b></div></div>
+        <p class="note">Kept cool and dry. Heat shortens shelf life for any food.</p>
       </div>
-      <div class="bill" aria-live="polite">
-        <div class="bill-head"><span class="muted" id="o-sum">4 people, 1 month</span><b id="o-kcal">2,40,000 kcal</b></div>
-        <dl class="out-rows" id="o-rows"></dl>
-        <div class="total"><span>Indicative cost</span><b id="o-price">₹0</b></div>
-        <button class="btn" id="plan-reserve" type="button">Reserve this plan free</button>
-        <small>Water isn't included. Keep about 4 litres per person for each no-gas day.</small>
-      </div>
+      <div class="photo img"><img src="images/stocked.jpg" alt="A row of Suppli World meal pouches on a kitchen counter beside a bowl of khichdi" width="1200" height="900" loading="lazy" decoding="async"></div>
     </div>
+    <div class="icons"><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="27" width="12" height="13"/><rect x="23" y="27" width="12" height="13"/><rect x="16" y="12" width="12" height="13"/><path d="M6 41h32"/></svg><b>Easy to store</b><span>Fits a shelf or loft</span></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="11" y="18" width="22" height="22"/><path d="M8 13h28v5H8zM18 8h8"/></svg><b>Airtight</b><span>Nothing gets in</span></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 5l14 6v10c0 9-6 15-14 18C14 36 8 30 8 21V11z"/><path d="M15 22l5 5 9-10"/></svg><b>Damp-proof</b><span>Keeps out moisture and light</span></div><div><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5"><ellipse cx="22" cy="14" rx="14" ry="6"/><path d="M8 14v18c0 3 6 6 14 6s14-3 14-6V14"/><path d="M16 14h12"/></svg><b>Dated</b><span>Read it at a glance</span></div></div>
   </div>
 </section>
 
-<section class="sec" id="kits" style="padding-top:0">
+<hr class="stitch">
+
+<section class="sec" id="choose" data-watch="choose">
   <div class="wrap">
-    <div class="sec-head"><h2>Or start with a ready supply</h2><p>Not on sale yet. Reserve free and get first access.</p></div>
+    <div class="sec-head"><h2>Which would you want?</h2><p class="reassure">No payment. Not on sale yet.</p></div>
     <div class="kits" id="kit-list">
-      <article class="kit" data-kit="home"><div class="photo"><span>Photo: meal pouches and a steel water bottle on a counter</span></div><span class="for">Home readiness</span><h3>72-Hour No-Gas Pack</h3><p class="meta">9 meals for 1 person, about 2,000 kcal a day.</p><p class="price" data-price="home">₹2,999</p><p class="needs"><b>Needs:</b> only water, hot or cold</p><button class="btn" data-reserve="home">Reserve free</button></article>
-      <article class="kit" data-kit="stockup"><div class="photo"><span>Photo: twelve tins stacked</span></div><span class="for">Smart stock-up</span><h3>30-Day Staples Supply</h3><p class="meta">A family of 4 for a month. Rice, wheat, dal, sugar, salt.</p><p class="price" data-price="stockup">₹7,499</p><p class="needs"><b>Needs:</b> cooking as usual</p><button class="btn" data-reserve="stockup">Reserve free</button></article>
-      <article class="kit" data-kit="quarter"><div class="photo"><span>Photo: a fully stocked storeroom cupboard</span></div><span class="for">Long-term</span><h3>3-Month Family Store</h3><p class="meta">A family of 4 for 90 days. About 200 kg of staples in tins.</p><p class="price" data-price="quarter">₹22,499</p><p class="needs"><b>Needs:</b> cooking as usual, about two cupboards</p><button class="btn" data-reserve="quarter">Reserve free</button></article>
-      <article class="kit" data-kit="trek"><div class="photo"><span>Photo: pouches in a trekking backpack</span></div><span class="for">Treks and travel</span><h3>Trail Kit</h3><p class="meta">6 meals and 2 breakfasts. Eat from the pouch.</p><p class="price" data-price="trek">₹2,199</p><p class="needs"><b>Needs:</b> only water, hot or cold</p><button class="btn" data-reserve="trek">Reserve free</button></article>
-    </div>
-    <p class="note">Indicative prices. Reserving costs nothing and commits you to nothing.</p>
-  </div>
-</section>
-
-<hr class="stitch">
-
-<section class="sec" id="life">
-  <div class="wrap">
-    <div class="sec-head"><h2>How long each thing keeps</h2><p>Sealed with the oxygen removed, kept cool and dry. Some foods last decades and some don't, and every tin tells you which.</p></div>
-    <div class="scroll-x"><table class="life">
-      <thead><tr><th>Food</th><th>Sealed shelf life</th><th>Worth knowing</th></tr></thead>
-      <tbody>
-        <tr><td>White rice</td><td>20+ years</td><td>Sona masoori, basmati. Polished rice keeps far longer than brown.</td></tr>
-        <tr><td>Wheat grain</td><td>20+ years</td><td>Stored as grain and milled at your local chakki when you need atta.</td></tr>
-        <tr><td>Sugar and salt</td><td>Indefinite</td><td>As long as they stay dry.</td></tr>
-        <tr><td>Rolled oats</td><td>Up to 20 years</td><td>Cooks fast, useful when fuel is short.</td></tr>
-        <tr><td>Dals and rajma</td><td>10 to 20 years</td><td>Older dal takes longer to cook. Soaking helps.</td></tr>
-        <tr><td>Skimmed milk powder</td><td>Up to 20 years</td><td>Whole milk powder keeps much less because of the fat.</td></tr>
-        <tr><td>Millets</td><td>Testing</td><td>Ragi, jowar and foxtail millet. Results published before we sell.</td></tr>
-        <tr><td>No-gas meals</td><td>5 to 20 years</td><td>Depends on the meal and process. Every pouch is dated.</td></tr>
-        <tr class="short"><td>Atta</td><td>1 to 2 years</td><td>Its natural oils go stale, which is why we pack the grain.</td></tr>
-        <tr class="short"><td>Oil and ghee</td><td>1 to 2 years</td><td>Packed separately with their own date. Use and replace yearly.</td></tr>
-      </tbody></table></div>
-    <p class="note">Long-term figures come from storage studies in cool conditions. Indian summers are hotter, so keep tins in the coolest place you have.</p>
-  </div>
-</section>
-
-<section class="sec" style="padding-top:0">
-  <div class="wrap day">
-    <div class="sec-head" style="margin:0"><h2>One person, one day</h2><p>What a day of staples looks like for one adult. Rice, rotis and dal, the food you already eat.</p></div>
-    <div class="ration" id="ration"></div>
-  </div>
-</section>
-
-<hr class="stitch">
-
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head"><h2>Stock it once, then leave it</h2></div>
-    <div class="rot">
-      <div><h3>Store it</h3><p>Coolest, driest corner you have. Off the floor and out of the sun.</p></div>
-      <div><h3>Leave the long-keepers</h3><p>Rice, wheat, sugar and salt can sit for years untouched.</p></div>
-      <div><h3>Rotate the rest</h3><p>Use oil, ghee and dal in normal cooking every year or two, and top up.</p></div>
+      <article class="kit" data-kit="home"><div class="photo"><span>Photo B4: meal pouches, a water bottle and a lantern</span></div><span class="for">For days without gas</span><h3>No-Gas Pack</h3><p class="meta">3 days of ready meals for one person</p><button class="btn" data-reserve="home">Reserve</button></article>
+      <article class="kit" data-kit="stockup"><div class="photo"><span>Photo B5: a month of staples, stacked</span></div><span class="for">For stocking up</span><h3>Month of Staples</h3><p class="meta">Rice, wheat, dal and basics for a family of 4</p><button class="btn" data-reserve="stockup">Reserve</button></article>
+      <article class="kit" data-kit="trek"><div class="photo"><span>Photo B6: pouches in a trekking backpack</span></div><span class="for">For treks and travel</span><h3>Trail Kit</h3><p class="meta">Ready meals for a three-day trek</p><button class="btn" data-reserve="trek">Reserve</button></article>
     </div>
   </div>
 </section>
@@ -424,47 +484,29 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
 <section class="band founder" id="story">
   <div class="wrap sec">
     <blockquote>
-      <p>Every Indian home keeps a stock. A drum of rice, a few kilos of dal, a tin of oil. It's how our parents ran a kitchen. But that stock is packed to last a few months, and it's the first thing to run out when gas gets rationed, prices jump or the roads flood.</p>
-      <p>In the UK, where one of us lives, the government has started asking every household to keep a few days of food at home. In India, where we need it at least as much, nobody makes long-life food properly for the food we actually eat.</p>
-      <p>That's what Suppli World is: rice, wheat and dal packed to keep for decades, plus a few meals for the days there's no gas. No fear, no bunker. Just a fuller shelf.</p>
+      <p>Every Indian home keeps a stock: rice, dal, a tin of oil. But it's packed to last months, and it's the first thing to run out when gas is rationed or prices jump.</p>
+      <p>Nobody in India makes long-life food properly for the food we actually eat.</p>
+      <p>So that's what we're making. No fear, no bunker. Just a fuller shelf.</p>
       <cite>Sai and Sri, Founders, Suppli World</cite>
     </blockquote>
   </div>
 </section>
 
-<section class="sec" id="shelf">
-  <div class="wrap">
-    <div class="sec-head"><h2>Write your list</h2><p>Tick what you'd keep at home, from one tin to a year's stock. It decides what we make first.</p></div>
-    <div class="list-wrap">
-      <div class="ruled" id="shelf-cats"></div>
-      <aside class="tally" aria-live="polite">
-        <b id="tally-count">0 items</b>
-        <div class="bar"><i class="s" id="bar-s" style="width:0"></i><i class="m" id="bar-m" style="width:0"></i></div>
-        <div class="legend"><span id="lg-s">0 staples</span><span id="lg-m">0 meals</span></div>
-        <a class="btn" href="#join">Save my list</a>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<hr class="stitch">
-
-<section class="sec" id="join">
+<section class="sec" id="join" data-watch="join">
   <div class="wrap join">
-    <div class="sec-head" style="margin:0"><h2>Get first access</h2><p>We'll message you before anyone else. No payment, no spam.</p></div>
+    <div class="sec-head" style="margin:0"><h2>Get first access</h2><p>Samples and first pick when we launch. No payment, no spam.</p></div>
     <form class="form" id="wl" novalidate>
       <p class="holding" id="holding"></p>
       <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label for="f-hp">Leave this empty</label><input id="f-hp" tabindex="-1" autocomplete="off"></div>
       <div class="field"><label for="f-name">Name</label><input id="f-name" autocomplete="name"></div>
       <div class="row2"><div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" inputmode="email"></div><div class="field"><label for="f-wa">WhatsApp</label><input id="f-wa" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91"></div></div>
-      <p class="hint">Email or WhatsApp. One is enough.</p>
+      <p class="hint">One of the two is enough.</p>
       <div class="opt">
         <div class="field"><span class="q-label" id="q1">Mainly for (optional)</span><div class="picks" role="group" aria-labelledby="q1" data-multi="use_for">
           <button type="button" class="pick" aria-pressed="false" data-v="emergencies">Emergencies</button><button type="button" class="pick" aria-pressed="false" data-v="stocking up against prices">Stocking up</button><button type="button" class="pick" aria-pressed="false" data-v="treks and travel">Treks</button><button type="button" class="pick" aria-pressed="false" data-v="everyday cooking">Everyday</button></div></div>
-        <div class="field"><span class="q-label" id="q2">Any worries? (optional)</span><div class="picks" role="group" aria-labelledby="q2" data-multi="worries">
-          <button type="button" class="pick" aria-pressed="false" data-v="taste">Taste</button><button type="button" class="pick" aria-pressed="false" data-v="chemicals">Chemicals</button><button type="button" class="pick" aria-pressed="false" data-v="price">Price</button><button type="button" class="pick" aria-pressed="false" data-v="storage space or heat">Storage or heat</button><button type="button" class="pick" aria-pressed="false" data-v="not sure I need it">Not sure I need it</button></div></div>
-        <div class="field"><span class="q-label" id="q3">When would you buy? (optional)</span><div class="picks radio" role="group" aria-labelledby="q3" data-single="timing">
-          <button type="button" class="pick" aria-pressed="false" data-v="within a month">This month</button><button type="button" class="pick" aria-pressed="false" data-v="within 3 months">In 3 months</button><button type="button" class="pick" aria-pressed="false" data-v="just curious">Just curious</button></div></div>
+        <div class="field"><span class="q-label" id="q5">For food packed to keep 20 years, what would you pay compared with shop prices? (optional)</span><div class="picks radio" role="group" aria-labelledby="q5" data-single="premium">
+          <button type="button" class="pick" aria-pressed="false" data-v="same as shop">The same</button><button type="button" class="pick" aria-pressed="false" data-v="up to 25% more">Up to 25% more</button><button type="button" class="pick" aria-pressed="false" data-v="up to 50% more">Up to 50% more</button><button type="button" class="pick" aria-pressed="false" data-v="double or more">Double or more</button></div></div>
+        <div class="field"><label class="q-label" for="f-fav">A favourite you'd want packed to keep? (optional)</label><textarea id="f-fav" maxlength="300" placeholder="e.g. my mother's tomato chutney, gunpowder podi"></textarea></div>
       </div>
       <label class="consent"><input type="checkbox" id="f-consent"><span>Suppli World can store these details to contact me about the launch. <button type="button" class="linkbtn" data-open="privacy">Privacy notice</button></span></label>
       <p class="error" id="f-error" role="alert"></p>
@@ -478,26 +520,20 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
   <div class="wrap">
     <div class="sec-head"><h2>Questions</h2></div>
     <div class="faq">
-      <details><summary>How long does it really last?</summary><p>Rice, wheat grain, sugar and salt are built for 20 years or more. Dals, oats and milk powder for 10 to 20. Oil, ghee and atta for 1 to 2. Every tin shows its own date, set by when it still tastes right, not just when it's safe.</p></details>
-      <details><summary>How much do I need?</summary><p>Plan on about 2,000 kcal per person per day. For a family of 4, a month of staples is roughly 30 kg rice, 20 kg wheat, 12 kg dal, 2 kg sugar and some salt, plus oil. The planner works it out for you.</p></details>
-      <details><summary>How much space does it take?</summary><p>A month for a family of 4 is around 28 tins, about two cupboard shelves. The tins stack, so a loft or the top of a cupboard works.</p></details>
-      <details><summary>Once I open a tin, how long does it keep?</summary><p>Snap the lid back on and use it like any rice or dal in your kitchen, within a few weeks to months. Unopened tins are the ones that keep for years.</p></details>
-      <details><summary>Where should I store it?</summary><p>The coolest, driest spot you have, off the floor and out of the sun. Heat shortens shelf life for any food, so a storeroom or inside cupboard is better than a hot loft.</p></details>
-      <details><summary>What if there's no gas?</summary><p>The no-gas meals cook in the pouch with hot water, or with ordinary water if you wait longer. Oats and poha also need very little fuel.</p></details>
-      <details><summary>How is this different from rice from the shop?</summary><p>Shop packets let air and moisture in, so rice gets weevils and dal goes stale within months. Ours is dried, sealed with the oxygen removed and packed in metal that keeps out light, damp and pests.</p></details>
-      <details><summary>Why wheat grain and not atta?</summary><p>Whole wheat atta goes stale in a year or two because of its natural oils. Wheat grain keeps for decades, and any local chakki will mill it in minutes.</p></details>
-      <details><summary>Do I need to store water too?</summary><p>Yes, for emergencies. We don't sell water, but keep about 4 litres per person for each day you might be without supply.</p></details>
-      <details><summary>Can I buy now?</summary><p>Not yet. We're finding out what people want before we make it. Waitlist members get first access and samples.</p></details>
-      <details><summary>Will it be FSSAI licensed?</summary><p>Yes. Every product will carry an FSSAI licence number before anything goes on sale.</p></details>
+      <details><summary>Can I buy now?</summary><p>Not yet. We're finding out what people want first. Waitlist members get samples and first access.</p></details>
+      <details><summary>Is this survival food?</summary><p>It's everyday Indian food, packed to keep for years. Useful in an emergency, normal on a Tuesday.</p></details>
+      <details><summary>How much space does it take?</summary><p>Less than you'd think. The packs stack, and a month for a family fits on a couple of shelves.</p></details>
     </div>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap foot"><span>© 2026 Suppli World. Not taking orders yet.</span><span><a href="mailto:hello@suppli.world">hello@suppli.world</a>&nbsp;&nbsp;&nbsp;<button class="linkbtn" data-open="privacy">Privacy</button></span></div></footer>
+<footer><div class="wrap foot"><span>© 2026 Suppli World. Not taking orders yet.</span><span><a href="mailto:sai.suppli@gmail.com">sai.suppli@gmail.com</a>&nbsp;&nbsp;&nbsp;<button class="linkbtn" data-open="privacy">Privacy</button></span></div></footer>
+<a class="btn sticky-cta" id="sticky" href="#choose">Join the waitlist</a>
+
 <dialog id="dlg-reserve" aria-labelledby="r-title">
   <div class="dlg">
-    <h3 id="r-title">Kit</h3>
+    <h3 id="r-title">Supply</h3>
     <p>We're not selling yet. Leave your details and we'll hold a founding spot for you. No payment.</p>
     <div class="actions">
       <button class="btn" id="r-go">Hold my spot</button>
@@ -513,7 +549,7 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
       <p>We collect your name, email or WhatsApp number, and your answers on this page.</p>
       <h4>Why</h4><p>To contact you about our launch and decide what to make. Nothing else.</p>
       <h4>Who sees it</h4><p>Only the Suppli World team. We don't sell or share it. Your answers are stored in a private Google Sheet that only we can open, and we use Meta's tools to measure our ads.</p>
-      <h4>Your choices</h4><p>Email <a href="mailto:hello@suppli.world">hello@suppli.world</a> to see, correct or delete your details, or withdraw consent. If we don't launch, we delete the list.</p>
+      <h4>Your choices</h4><p>Email <a href="mailto:sai.suppli@gmail.com">sai.suppli@gmail.com</a> to see, correct or delete your details, or withdraw consent. If we don't launch, we delete the list.</p>
     </div>
     <div class="actions"><button class="btn" data-close>Close</button></div>
   </div>
@@ -521,50 +557,23 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
 <script>
 (function(){
   var META_PIXEL_ID = ''; // paste your Meta Pixel ID before running ads
-  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwpz5mcyEeTeL46r534sLTbMKDtzGK5QeBDpp-2X3m6AFbP_KhTDl7cP5ZKPIDjJ47Gxg/exec';     // paste your Google Apps Script web app URL (ends in /exec)
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwpz5mcyEeTeL46r534sLTbMKDtzGK5QeBDpp-2X3m6AFbP_KhTDl7cP5ZKPIDjJ47Gxg/exec'; // Google Apps Script web app URL (ends in /exec)
 
   var SEG = {
-    home:{title:"When the gas runs out, your kitchen doesn't.", sub:"Emergency food for Indian homes. Sealed staples for the long run, plus meals that need only water.",
-      type:"SUPPLI WORLD · NO-GAS MEAL", label:"Khichdi", serves:"Moong dal khichdi · 1 serving · pouch", ingr:"Rice, moong dal, ghee, cumin, turmeric, salt", k3:"Prepare", v3:"Add water, seal, wait. No gas needed", nogas:3},
-    stockup:{title:"Stock at today's prices. Keeps for 20 years.", sub:"Long-life staples for Indian homes. Rice, wheat and dal in sealed tins. Buy once, use slowly, worry less when prices jump.",
-      type:"SUPPLI WORLD · LONG-LIFE STOCK", label:"Toor Dal", serves:"Split pigeon pea · 2.5 kg tin · sealed", ingr:"Toor dal", k3:"Store", v3:"Cool, dry, off the floor", nogas:0},
-    trek:{title:"Real meals at altitude. Just add water.", sub:"Long-life trail food, made Indian. Light pouches that cook in the bag, hot water or cold.",
-      type:"SUPPLI WORLD · TRAIL MEAL", label:"Rajma Chawal", serves:"1 serving · light pouch", ingr:"Rice, rajma, onion, tomato, ginger, spices, salt", k3:"Prepare", v3:"Add water to the line, seal, wait 10 min", nogas:3},
-    'default':{title:"Rice, dal, wheat. Packed to keep 20 years.", sub:"Long-life staples and emergency food for Indian homes. Buy once, store it, and stop worrying about the next shortage.",
-      type:"SUPPLI WORLD · LONG-LIFE STOCK", label:"Sona Masoori", serves:"Raw rice · 2.5 kg tin · sealed", ingr:"Sona masoori rice", k3:"Store", v3:"Cool, dry, off the floor", nogas:3}
+    home:{title:"When the gas runs out, your kitchen doesn't.", sub:"Long-life staples, plus ready meals that need only water.", type:"SUPPLI WORLD · NO-GAS MEAL", label:"Khichdi", serves:"Ready meal · just add water", k3:"Prepare", v3:"Add water, wait, eat"},
+    stockup:{title:"Stock at today's prices. Keeps for 20 years.", sub:"Rice, wheat and dal, sealed. Buy once, worry less when prices jump.", type:"SUPPLI WORLD · LONG-LIFE STOCK", label:"Toor Dal", serves:"Split pigeon pea · sealed", k3:"Store", v3:"Cool and dry"},
+    trek:{title:"Real meals at altitude. Just add water.", sub:"Light Indian meals that cook in the pouch.", type:"SUPPLI WORLD · TRAIL MEAL", label:"Rajma Chawal", serves:"Ready meal · light pouch", k3:"Prepare", v3:"Add water, wait, eat"},
+    'default':{title:"Rice, dal, wheat. Packed to keep 20 years.", sub:"Long-life staples and emergency food for Indian homes.", type:"SUPPLI WORLD · LONG-LIFE STOCK", label:"Sona Masoori", serves:"Raw rice · sealed", k3:"Store", v3:"Cool and dry"}
   };
   var ALIAS = {monsoon:'home', floods:'home', staples:'stockup', stock:'stockup', travel:'trek'};
-
-  // Price tiers (randomly assigned per visitor). staplesPD = rupees per person-day of staples; pouch = per no-gas meal.
-  var TIERS = {
-    A:{home:2249, stockup:5499, quarter:16499, trek:1599, staplesPD:45, pouch:249},
-    B:{home:2999, stockup:7499, quarter:22499, trek:2199, staplesPD:62, pouch:333},
-    C:{home:3999, stockup:9999, quarter:29999, trek:2799, staplesPD:83, pouch:444}
-  };
-  var KIT = {home:'72-Hour No-Gas Pack', stockup:'30-Day Staples Supply', quarter:'3-Month Family Store', trek:'Trail Kit'};
-
-  // One person, one day, staples only (grams, kcal per 100 g, protein per 100 g)
-  var DAY = [
-    {name:'Rice', g:250, kcal:350, p:6.8},
-    {name:'Wheat', g:170, kcal:330, p:12},
-    {name:'Dal', g:100, kcal:340, p:22},
-    {name:'Oil', g:25, kcal:900, p:0},
-    {name:'Sugar', g:15, kcal:400, p:0},
-    {name:'Salt', g:5, kcal:0, p:0}
-  ];
-  var TIN_KG = 2.5, TINS_PER_SHELF = 16, POUCH_PER_DAY = 3;
-
+  var KIT = {home:'No-Gas Pack', stockup:'Month of Staples', trek:'Trail Kit'};
   var SHELF = [
-    {cat:'Rice and grains', type:'staple', items:['Sona masoori rice','Basmati rice','Wheat grain','Rolled oats','Ragi','Jowar','Foxtail millet']},
-    {cat:'Dals and pulses', type:'staple', items:['Toor dal','Moong dal','Chana dal','Masoor dal','Rajma','Kabuli chana']},
-    {cat:'Basics', type:'staple', items:['Sugar','Salt','Milk powder','Poha','Rava','Besan','Cooking oil','Ghee','Atta']},
-    {cat:'No-gas meals', type:'meal', items:['Khichdi','Dal-chawal','Pongal','Upma','Lemon rice','Rajma-chawal','Veg pulao','Curd rice']},
-    {cat:'Beyond Indian', type:'meal', items:['Veg pasta','Fruit bites','Masala oats']}
+    {cat:'Staples', type:'staple', items:['Rice','Wheat','Dals','Millets','Oats','Sugar and salt','Cooking oil','Milk powder']},
+    {cat:'Ready meals', type:'meal', items:['Khichdi','Dal chawal','Upma or poha','Rajma chawal','Pasta or noodles']}
   ];
 
   function st(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
   function fmt(n){return '\u20b9'+Math.round(n).toLocaleString('en-IN');}
-  function num(n){return Math.round(n).toLocaleString('en-IN');}
   function $(s,r){return (r||document).querySelector(s);}
   function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
   function reduce(){return matchMedia('(prefers-reduced-motion: reduce)').matches;}
@@ -577,81 +586,34 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
   var q = new URLSearchParams(location.search);
   var entry = (q.get('for')||'').toLowerCase(); entry = ALIAS[entry]||entry; if(!SEG[entry]||entry==='default') entry='';
   var utm={}; ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){utm[k]=q.get(k)||'';});
-  var tier = st('sw_tier5'); if(!TIERS[tier]){ tier=['A','B','C'][Math.floor(Math.random()*3)]; st('sw_tier5',tier); }
-  var T = TIERS[tier];
-  var S = {viewed:entry, kit:'', plan:null, picks:{}, use_for:{}, worries:{}, timing:''};
-  var P = {people:4, days:30, nogas:3};
+  var S = {kit:'', picks:{}, use_for:{}, worries:{}, timing:'', amount:'', premium:''};
 
-  /* segments */
-  function setSeg(seg, user){
-    var c = SEG[seg]||SEG['default'];
-    $('#hero-title').textContent=c.title; $('#hero-sub').innerHTML=c.sub;
-    $('#label-type').textContent=c.type; $('#label-name').textContent=c.label; $('#label-serves').textContent=c.serves;
-    $('#label-ingr').textContent=c.ingr; $('#label-k3').textContent=c.k3; $('#label-v3').textContent=c.v3;
-    $$('.door').forEach(function(d){ d.setAttribute('aria-pressed', d.dataset.seg===seg?'true':'false'); });
-    var list=$('#kit-list');
-    $$('.kit',list).forEach(function(k){ k.classList.toggle('featured',k.dataset.kit===seg); });
-    var f=list.querySelector('[data-kit="'+seg+'"]'); if(f) list.insertBefore(f,list.firstChild);
-    if(!user){ P.nogas = c.nogas; syncPicks('#nogas','n',P.nogas); }
-    if(user){ S.viewed=seg; track('SegmentChosen',{segment:seg},true); }
-  }
-  $$('.door').forEach(function(d){ d.addEventListener('click',function(){ setSeg(d.dataset.seg,true); window.scrollTo({top:0,behavior:reduce()?'auto':'smooth'}); }); });
+  /* segment personalisation (from the ad link) */
+  var c = SEG[entry]||SEG['default'];
+  $('#hero-title').textContent=c.title; $('#hero-sub').textContent=c.sub;
+  $('#label-type').textContent=c.type; $('#label-name').textContent=c.label; $('#label-serves').textContent=c.serves;
+  $('#label-k3').textContent=c.k3; $('#label-v3').textContent=c.v3;
+  if(entry){ var list=$('#kit-list'), f=list.querySelector('[data-kit="'+entry+'"]'); if(f){ f.classList.add('featured'); list.insertBefore(f,list.firstChild); } }
 
-  /* prices on kits */
-  $$('[data-price]').forEach(function(el){ el.textContent=fmt(T[el.dataset.price]); });
 
-  /* one day ration */
+  /* shelf-life bars fill when seen */
   (function(){
-    var box=$('#ration'), tk=0, tp=0, max=0;
-    DAY.forEach(function(d){ var k=d.g*d.kcal/100; d.k=k; tk+=k; tp+=d.g*d.p/100; if(k>max) max=k; });
-    DAY.forEach(function(d){
-      var r=document.createElement('div'); r.className='r-row';
-      r.innerHTML='<span>'+d.name+' <span class="muted" style="font-size:13px">'+d.g+' g</span></span><div class="r-bar"><i style="width:'+(d.k/max*100)+'%"></i></div><span>'+num(d.k)+' kcal</span>';
-      box.appendChild(r);
-    });
-    var t=document.createElement('div'); t.className='r-total';
-    t.innerHTML='<div><b>'+num(tk)+'</b><small>kcal a day</small></div><div><b>'+Math.round(tp)+' g</b><small>protein a day</small></div><div><b>'+(DAY.reduce(function(a,d){return a+d.g;},0)/1000).toFixed(2)+' kg</b><small>dry food a day</small></div>';
-    box.appendChild(t);
+    var rows=$$('.fill'); function fill(){ rows.forEach(function(r){ r.style.width=r.dataset.w+'%'; }); }
+    if(reduce()||!('IntersectionObserver' in window)){ fill(); return; }
+    var io=new IntersectionObserver(function(es){ es.forEach(function(x){ if(x.isIntersecting){ fill(); io.disconnect(); } }); },{threshold:.3});
+    io.observe($('#bars'));
   })();
 
-  /* planner */
-  function syncPicks(sel, attr, val){ $$(sel+' .pick').forEach(function(b){ b.setAttribute('aria-pressed', String(+b.dataset[attr]===val)); }); }
-  function durLabel(d){ return {3:'3 days',7:'1 week',30:'1 month',90:'3 months',180:'6 months',365:'1 year'}[d]||d+' days'; }
-  function calc(){
-    var ng = Math.min(P.nogas, P.days);
-    var sd = P.days - ng;                 // staple days
-    var pdS = P.people*sd, pdN = P.people*ng;
-    var rows = [], tins = 0;
-    DAY.forEach(function(d){
-      if(d.name==='Oil'){ rows.push(['Cooking oil', num(d.g*pdS/1000)+' L']); return; }
-      var kg = d.g*pdS/1000; if(kg<=0) return;
-      tins += Math.ceil(kg/TIN_KG);
-      rows.push([d.name==='Wheat'?'Wheat grain':d.name, (kg<10?kg.toFixed(1):num(kg))+' kg']);
-    });
-    var pouches = pdN*POUCH_PER_DAY;
-    var shelves = Math.max(1, Math.ceil((tins + pouches/8)/TINS_PER_SHELF));
-    var price = pdS*T.staplesPD + pouches*T.pouch;
-    price = Math.round(price/100)*100;
-    $('#o-sum').textContent = P.people+(P.people===1?' person, ':' people, ')+durLabel(P.days);
-    $('#o-kcal').textContent = num(P.people*P.days*2000)+' kcal';
-    var html='';
-    rows.forEach(function(r){ html+='<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'; });
-    html+='<div class="sep"></div>';
-    html+='<dt>No-gas meal pouches</dt><dd>'+num(pouches)+'</dd>';
-    html+='<dt>Sealed tins (2.5 kg)</dt><dd>'+num(tins)+'</dd>';
-    html+='<dt>Storage space</dt><dd>about '+shelves+(shelves===1?' cupboard shelf':' cupboard shelves')+'</dd>';
-    if(ng>0) html+='<dt>Water to keep</dt><dd>'+num(pdN*4)+' L</dd>';
-    $('#o-rows').innerHTML=html;
-    $('#o-price').textContent = fmt(price);
-    S.planCalc = {people:P.people, days:P.days, nogas:ng, price:price};
-  }
-  $('#p-minus').addEventListener('click',function(){ if(P.people>1){P.people--; $('#p-val').textContent=P.people; calc();} });
-  $('#p-plus').addEventListener('click',function(){ if(P.people<12){P.people++; $('#p-val').textContent=P.people; calc();} });
-  $$('#dur .pick').forEach(function(b){ b.addEventListener('click',function(){ P.days=+b.dataset.d; syncPicks('#dur','d',P.days); calc(); }); });
-  $$('#nogas .pick').forEach(function(b){ b.addEventListener('click',function(){ P.nogas=+b.dataset.n; syncPicks('#nogas','n',P.nogas); calc(); }); });
+  /* sticky reserve button on phones */
+  (function(){
+    var bar=$('#sticky'); if(!bar||!('IntersectionObserver' in window)) return;
+    var vis={hero:true,choose:false,join:false};
+    var io=new IntersectionObserver(function(es){ es.forEach(function(x){ vis[x.target.dataset.watch]=x.isIntersecting; }); bar.classList.toggle('on',!vis.hero&&!vis.choose&&!vis.join); },{threshold:0});
+    $$('[data-watch]').forEach(function(el){ io.observe(el); });
+  })();
 
-  setSeg(entry||'default',false);
-  calc();
+  /* favourite strip: jump to the form field */
+  $('#fav-link').addEventListener('click',function(e){ e.preventDefault(); track('FavouriteClick',{},true); $('#f-fav').scrollIntoView({behavior:reduce()?'auto':'smooth',block:'center'}); setTimeout(function(){ $('#f-fav').focus({preventScroll:true}); },450); });
 
   /* dialogs */
   function openD(d){ d.showModal?d.showModal():d.setAttribute('open',''); }
@@ -660,55 +622,25 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
   $$('dialog').forEach(function(d){ d.addEventListener('click',function(e){ if(e.target===d) closeD(d); }); });
   $$('[data-open="privacy"]').forEach(function(b){ b.addEventListener('click',function(e){ e.preventDefault(); openD($('#dlg-privacy')); }); });
 
+  /* reserve (fake door) */
   var dR=$('#dlg-reserve'), pending='';
   $$('[data-reserve]').forEach(function(b){ b.addEventListener('click',function(){
-    var k=b.dataset.reserve; S.kit=k; S.plan=null;
-    track('ReserveClick',{kit:k,price_tier:tier,price:T[k],segment:entry||'none'},true);
-    pending=KIT[k]+', '+fmt(T[k]);
+    var k=b.dataset.reserve; S.kit=k; pending=KIT[k];
+    track('ReserveClick',{kit:k,segment:entry||'none'},true);
     $('#r-title').textContent=pending; openD(dR);
   }); });
-  $('#plan-reserve').addEventListener('click',function(){
-    S.plan = S.planCalc; S.kit='';
-    track('PlanReserve',{people:S.plan.people,days:S.plan.days,nogas_days:S.plan.nogas,price:S.plan.price,price_tier:tier,segment:entry||'none'},true);
-    pending='Your plan: '+$('#o-sum').textContent+', about '+fmt(S.plan.price);
-    $('#r-title').textContent=pending; openD(dR);
-  });
   $('#r-go').addEventListener('click',function(){
     closeD(dR);
-    var h=$('#holding'); h.textContent='Holding a founding spot. '+pending; h.classList.add('on');
+    var h=$('#holding'); h.textContent='Holding a founding spot: '+pending; h.classList.add('on');
     $('#join').scrollIntoView({behavior:reduce()?'auto':'smooth'});
     setTimeout(function(){ $('#f-name').focus({preventScroll:true}); },450);
   });
 
-  /* shelf */
-  var cats=$('#shelf-cats');
-  SHELF.forEach(function(g){
-    var w=document.createElement('div'); w.className='cat';
-    var h=document.createElement('h3'); h.textContent=g.cat; w.appendChild(h);
-    var r=document.createElement('div'); r.className='picks'; r.setAttribute('role','group'); r.setAttribute('aria-label',g.cat);
-    g.items.forEach(function(it){
-      var b=document.createElement('button'); b.type='button'; b.className='pick'; b.textContent=it; b.setAttribute('aria-pressed','false');
-      b.addEventListener('click',function(){
-        var on=b.getAttribute('aria-pressed')!=='true'; b.setAttribute('aria-pressed',on?'true':'false');
-        if(on){S.picks[it]=g.type; track('ShelfPick',{item:it,type:g.type},true);} else delete S.picks[it];
-        tally();
-      });
-      r.appendChild(b);
-    });
-    w.appendChild(r); cats.appendChild(w);
-  });
-  function tally(){
-    var k=Object.keys(S.picks), s=k.filter(function(x){return S.picks[x]==='staple';}).length, m=k.length-s, t=Math.max(k.length,1);
-    $('#tally-count').textContent=k.length+(k.length===1?' item':' items');
-    $('#bar-s').style.width=(s/t*100)+'%'; $('#bar-m').style.width=(m/t*100)+'%';
-    $('#lg-s').textContent=s+(s===1?' staple':' staples'); $('#lg-m').textContent=m+(m===1?' meal':' meals');
-  }
-  tally();
 
   $$('[data-multi]').forEach(function(g){ var key=g.dataset.multi; $$('.pick',g).forEach(function(b){ b.addEventListener('click',function(){ var on=b.getAttribute('aria-pressed')!=='true'; b.setAttribute('aria-pressed',on?'true':'false'); if(on)S[key][b.dataset.v]=1; else delete S[key][b.dataset.v]; }); }); });
   $$('[data-single]').forEach(function(g){ var key=g.dataset.single; $$('.pick',g).forEach(function(b){ b.addEventListener('click',function(){ var on=b.getAttribute('aria-pressed')!=='true'; $$('.pick',g).forEach(function(x){x.setAttribute('aria-pressed','false');}); b.setAttribute('aria-pressed',on?'true':'false'); S[key]=on?b.dataset.v:''; }); }); });
 
-  /* submit */
+  /* submit to the Google Sheet */
   $('#wl').addEventListener('submit',function(e){
     e.preventDefault();
     var err=$('#f-error'); err.textContent='';
@@ -718,10 +650,14 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
     if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Check the email address.';$('#f-email').focus();return;}
     if(wa&&wa.replace(/\D/g,'').length<10){err.textContent='WhatsApp numbers need at least 10 digits.';$('#f-wa').focus();return;}
     if(!$('#f-consent').checked){err.textContent='Tick the consent box so we can contact you.';return;}
-    var p=Object.keys(S.picks), pl=S.plan;
-    var d={submitted_from:location.hostname,'bot-field':$('#f-hp').value,name:name,email:email,whatsapp:wa,entry_segment:entry||'none',viewed_segment:S.viewed||'none',price_tier:tier,
-      reserved_kit:S.kit?KIT[S.kit]:(pl?'Custom plan':''),reserved_price:S.kit?String(T[S.kit]):(pl?String(pl.price):''),
-      plan_people:pl?String(pl.people):'',plan_days:pl?String(pl.days):'',plan_nogas_days:pl?String(pl.nogas):'',plan_price:pl?String(pl.price):'',
+    var p=Object.keys(S.picks);
+    // plan_days column now holds "how much would you keep" (no Sheet changes needed)
+    var d={submitted_from:location.hostname,'bot-field':$('#f-hp').value,name:name,email:email,whatsapp:wa,
+      entry_segment:entry||'none',viewed_segment:entry||'none',price_tier:'none',
+      reserved_kit:S.kit?KIT[S.kit]:'',reserved_price:'',
+      plan_price:S.premium, // plan_price column now holds the premium they'd pay over shop prices
+      plan_days:S.amount,
+      plan_people:$('#f-fav').value.trim(), // plan_people column now holds the favourite they'd want packed
       shelf_picks:p.join(', '),
       shelf_staples_count:String(p.filter(function(x){return S.picks[x]==='staple';}).length),
       shelf_meals_count:String(p.filter(function(x){return S.picks[x]==='meal';}).length),
@@ -730,14 +666,12 @@ dialog::backdrop{background:rgba(20,18,14,.6)}
     var btn=$('#f-submit');
     var live=/suppli\.world|github\.io/.test(location.hostname);
     function fail(msg){ btn.disabled=false; btn.textContent='Join the waitlist'; err.textContent=msg; }
+    function ok(){ track('Lead',{segment:entry||'none',premium:S.premium||'none',reserved_kit:S.kit||'none',favourite:d.plan_people?'yes':'no'}); $$('#wl > *:not(.done)').forEach(function(x){x.style.display='none';}); $('#done').classList.add('on'); }
     if(!SHEET_URL){ if(live){ fail('Sign-ups are not switched on yet. Please try again later.'); } else { ok(); } return; }
     btn.disabled=true; btn.textContent='Joining\u2026';
-    var body=new URLSearchParams(d);
-    // Apps Script doesn't send CORS headers, so the response is opaque; a resolved request means it arrived.
-    fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:body})
+    fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(d)})
       .then(function(){ ok(); })
       .catch(function(){ fail('That didn\'t save. Check your connection and try again.'); });
-    function ok(){ track('Lead',{segment:entry||'none',price_tier:tier,reserved:S.kit||(pl?'plan':'none')}); $$('#wl > *:not(.done)').forEach(function(x){x.style.display='none';}); $('#done').classList.add('on'); }
   });
 })();
 </script>
